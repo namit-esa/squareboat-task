@@ -6,7 +6,6 @@ jobs:
   build_and_test:
     docker:
       - image: cimg/base:stable
-    executor: node/14.x
     steps:
       - checkout
       - node/install-packages:
