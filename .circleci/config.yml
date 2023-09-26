@@ -4,11 +4,11 @@ orbs:
 
 jobs:
   build_and_test:
+    executor: node/default
     steps:
       - checkout
       - node/install-packages:
           pkg-manager: npm
-          node-version: '14.17'
       - run:
           command: npm run build
           name: Build app
